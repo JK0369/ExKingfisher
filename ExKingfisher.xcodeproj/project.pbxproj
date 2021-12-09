@@ -13,9 +13,11 @@
 		C669EBAB2761C2010086DDFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C669EBA92761C2010086DDFB /* Main.storyboard */; };
 		C669EBAD2761C2060086DDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C669EBAC2761C2060086DDFB /* Assets.xcassets */; };
 		C669EBB02761C2060086DDFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C669EBAE2761C2060086DDFB /* LaunchScreen.storyboard */; };
+		FEB4B8927D7F7209C4BA442E /* Pods_ExKingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C05F19301CAD32577BD81AC /* Pods_ExKingfisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C05F19301CAD32577BD81AC /* Pods_ExKingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExKingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C669EBA02761C2010086DDFB /* ExKingfisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExKingfisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C669EBA32761C2010086DDFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C669EBA52761C2010086DDFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		C669EBAC2761C2060086DDFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C669EBAF2761C2060086DDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C669EBB12761C2060086DDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8771BEEA145FF59175A123 /* Pods-ExKingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExKingfisher.release.xcconfig"; path = "Target Support Files/Pods-ExKingfisher/Pods-ExKingfisher.release.xcconfig"; sourceTree = "<group>"; };
+		F0CE1F308A142016060153B0 /* Pods-ExKingfisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExKingfisher.debug.xcconfig"; path = "Target Support Files/Pods-ExKingfisher/Pods-ExKingfisher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB4B8927D7F7209C4BA442E /* Pods_ExKingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FD88335580A2851BC05CD42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0CE1F308A142016060153B0 /* Pods-ExKingfisher.debug.xcconfig */,
+				CB8771BEEA145FF59175A123 /* Pods-ExKingfisher.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C669EB972761C2010086DDFB = {
 			isa = PBXGroup;
 			children = (
 				C669EBA22761C2010086DDFB /* ExKingfisher */,
 				C669EBA12761C2010086DDFB /* Products */,
+				6FD88335580A2851BC05CD42 /* Pods */,
+				FC9982989520DA3C6C49DE02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = ExKingfisher;
 			sourceTree = "<group>";
 		};
+		FC9982989520DA3C6C49DE02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C05F19301CAD32577BD81AC /* Pods_ExKingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C669EBB42761C2060086DDFB /* Build configuration list for PBXNativeTarget "ExKingfisher" */;
 			buildPhases = (
+				314132D440158AB9CF1D3A0C /* [CP] Check Pods Manifest.lock */,
 				C669EB9C2761C2010086DDFB /* Sources */,
 				C669EB9D2761C2010086DDFB /* Frameworks */,
 				C669EB9E2761C2010086DDFB /* Resources */,
+				DC27F1B0E5F0F1CD3C1CBAC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		314132D440158AB9CF1D3A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExKingfisher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC27F1B0E5F0F1CD3C1CBAC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExKingfisher/Pods-ExKingfisher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExKingfisher/Pods-ExKingfisher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExKingfisher/Pods-ExKingfisher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C669EB9C2761C2010086DDFB /* Sources */ = {
@@ -284,6 +352,7 @@
 		};
 		C669EBB52761C2060086DDFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0CE1F308A142016060153B0 /* Pods-ExKingfisher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +366,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +382,7 @@
 		};
 		C669EBB62761C2060086DDFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8771BEEA145FF59175A123 /* Pods-ExKingfisher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +396,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
